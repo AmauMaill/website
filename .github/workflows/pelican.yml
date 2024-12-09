@@ -29,7 +29,7 @@ jobs:
     - name: Clone pelican-bootstrap3 theme
       run: |
         git clone https://github.com/getpelican/pelican-themes.git
-        cp -r pelican-themes/pelican-bootstrap3 ./theme  # Move it to your project's theme folder
+        cp -r pelican-themes/pelican-bootstrap3 ./theme/  # Move it to your project's theme folder
   
     - name: Build the Pelican site using the new theme
       run: pelican content -o output -s pelicanconf.py -t ./theme/pelican-bootstrap3
